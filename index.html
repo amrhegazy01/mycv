@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!--
+      This website was automatically generated from a CV.
+      It attempts to present the same information in a clean, modern layout
+      without removing any content. Feel free to adjust the CSS to suit
+      your personal taste or brand colours.
+    -->
+<title>Amr Hegazy</title>
+<!-- Google Fonts (optional) -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Font Awesome icons -->
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-ku/++YnWw1Gf9UZcMFM8zXkOdkN9WA+ksu/jfyTPzXBMPBb5VkEPTwxctb50ftNynxtS1fJstvje0tTeV6jNkg==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<!-- Inline styles are included here for environments where external
+         resources may not load correctly when opening the file directly in a
+         browser. The styles are also provided in css/style.css so you can
+         edit them separately. -->
+<style>
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  background-image: url('images/hero.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+
+.hero-content .subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0062cc;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+.navbar a {
+  display: block;
+  padding: 1rem 0;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+/* Section Styling */
+section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* About Section */
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.summary,
+.personal-info {
+  flex: 1;
+  min-width: 260px;
+}
+
+.summary h3,
+.personal-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+/* Education Section */
+.education-entry {
+  margin-bottom: 2rem;
+}
+
+.education-entry h3 {
+  margin: 0;
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+.education-entry p {
+  margin: 0.2rem 0 0;
+}
+
+/* Timeline Styling */
+.timeline {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #007bff;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 1.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 0.4rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #fff;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+}
+
+.timeline-item .date {
+  font-weight: 600;
+  color: #007bff;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-item h4 {
+  margin: 0 0 0.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.timeline-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Skills Section */
+.skill-category {
+  margin-bottom: 2.5rem;
+}
+
+.skill-category h3 {
+  font-size: 1.35rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.skill-category h3 i {
+  margin-right: 0.6rem;
+}
+
+.skill-category ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  padding: 0;
+}
+
+.skill-category ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Courses Section */
+.courses-list h3 {
+  margin-top: 1.5rem;
+  font-size: 1.35rem;
+  color: #007bff;
+}
+
+.courses-list ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.courses-list ul li {
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+/* Contact Section */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Contact icons */
+.contact-list .icon {
+  color: #007bff;
+  margin-right: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.contact-list a {
+  margin-right: 0.3rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive Queries */
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content .subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content .subtitle {
+    font-size: 0.95rem;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+  }
+  .navbar li {
+    margin: 0.5rem;
+  }
+  section {
+    padding: 3rem 1.5rem;
+  }
+  .timeline::before {
+    left: 0.8rem;
+  }
+  .timeline-item {
+    padding-left: 1rem;
+  }
+  .timeline-item::before {
+    left: -0.2rem;
+  }
+}
+    </style>
+<style>
+/* Enhanced Formatting */
+section h2 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.timeline-item {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.skill-category ul li,
+.courses-list ul li {
+    margin-bottom: 0.7rem;
+}
+
+.summary p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.contact-list li {
+    background: #f1f8ff;
+    padding: 0.6rem;
+    border-radius: 5px;
+}
+
+footer.footer {
+    border-top: 3px solid #007bff;
+}
+
+.btn {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+}
+
+.navbar a {
+    font-size: 1.05rem;
+}
+</style><style>
+/* ===== Work Experience: Redesigned ===== */
+.exp-grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+.exp-card{
+  grid-column: span 12;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.exp-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+  border-color: rgba(0,123,255,0.35);
+}
+.exp-header{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(180deg, rgba(0,123,255,0.06), rgba(0,123,255,0.02));
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.exp-icon{
+  margin-right: .85rem;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+.exp-title-wrap{
+  display:flex;
+  flex-direction:column;
+  gap:.15rem;
+  flex:1;
+  margin-left:.5rem;
+}
+.exp-title{
+  margin:0;
+  font-size: 1.2rem;
+  line-height: 1.35;
+  font-weight: 700;
+  color:#1f2937;
+}
+.exp-company{
+  font-size:.95rem;
+  color:#2563eb;
+  font-weight:600;
+}
+.exp-date{
+  font-size:.95rem;
+  font-weight:600;
+  color:#0b5ed7;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+.exp-body{
+  padding: 1rem 1.25rem 1.25rem;
+}
+.exp-body p{
+  margin:0;
+  color:#374151;
+  line-height:1.7;
+  font-size: 1.02rem;
+}
+
+/* Responsive layout */
+@media (min-width: 720px){
+  .exp-card{ grid-column: span 6; }
+}
+@media (min-width: 1100px){
+  .exp-card{ grid-column: span 4; }
+}
+</style><style>
+/* ===== Contact: Enhanced ===== */
+.contact-grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.contact-card{
+  grid-column: span 12;
+  display:flex;
+  align-items:center;
+  gap: .9rem;
+  padding: 1rem 1.1rem;
+  background:#ffffff;
+  border:1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  text-decoration:none;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.contact-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(0,123,255,0.35);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+.contact-icon{
+  font-size: 1.35rem;
+  color:#0b5ed7;
+}
+.contact-meta .label{
+  font-size:.9rem;
+  color:#6b7280;
+}
+.contact-meta .value{
+  font-weight:700;
+  font-size:1.05rem;
+  color:#111827;
+}
+.contact-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem;
+  margin-top: 1rem;
+}
+.btn.outline{
+  background:#fff;
+  color:#0b5ed7;
+  border: 1px solid #0b5ed7;
+}
+.toast{
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%) translateY(20px);
+  background: #111827;
+  color:#fff;
+  padding: .6rem .9rem;
+  border-radius: 10px;
+  font-size: .95rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  z-index: 1000;
+}
+.toast.show{
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+@media (min-width: 720px){
+  .contact-card{ grid-column: span 6; }
+}
+@media (min-width: 1100px){
+  .contact-card{ grid-column: span 4; }
+}
+</style><style>
+/* ===== About: Enhanced ===== */
+#about .about-grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+#about .about-photo{
+  grid-column: span 12;
+  max-width: 280px;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  justify-self: center;
+}
+#about .summary{
+  grid-column: span 12;
+}
+#about .personal-info{
+  grid-column: span 12;
+}
+#about .summary p{
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: #374151;
+}
+#about h3{
+  position: relative;
+  padding-bottom: 0.3rem;
+}
+#about h3::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #0d6efd, #66b2ff);
+  border-radius: 2px;
+}
+@media(min-width: 768px){
+  #about .about-photo{ grid-column: span 4; }
+  #about .summary{ grid-column: span 8; }
+  #about .personal-info{ grid-column: span 8; }
+}
+</style><style>
+#about .about-photo {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    justify-self: center;
+}
+</style></head>
+  <!-- Responsive override styles for mobile devices -->
+  <style>
+    @media (max-width: 600px) {
+      /* Reduce hero height and scale typography */
+      .hero {
+        height: 60vh;
+      }
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      .hero-content .subtitle {
+        font-size: 1rem;
+      }
+      /* Allow navigation items to wrap */
+      .navbar ul {
+        flex-wrap: wrap;
+      }
+      .navbar li {
+        margin: 0.5rem;
+      }
+      /* Compact section padding */
+      section {
+        padding: 2rem 1rem;
+      }
+      /* Stack work experience cards */
+      .exp-grid {
+        grid-template-columns: 1fr;
+      }
+      /* Stack contact card content */
+      .contact-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+      .contact-meta .value {
+        font-size: 1rem;
+      }
+      /* Smaller about photo */
+      #about .about-photo {
+        max-width: 140px;
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header class="hero">
+<div class="overlay"></div>
+<div class="hero-content">
+<h1>Amr Hegazy Omran Hegazy</h1>
+<p class="subtitle">
+          IT Infrastructure &amp; DevOps Tech Lead
+        </p>
+<a class="btn" href="#contact">Get in touch</a>
+</div>
+</header>
+<nav class="navbar">
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<!-- About Section -->
+<section id="about">
+<h2>About</h2>
+<div class="about-grid"><img alt="Amr Hegazy portrait" class="about-photo" src="images/profile.jpg"/>
+<div class="summary">
+<h3>Summary</h3>
+<p>With over 13 years of progressive experience in IT infrastructure, network engineering, and DevOps leadership, I have successfully driven enterprise-scale projects from conception to delivery. I excel at translating complex technical challenges into streamlined, scalable solutions—always with a focus on reliability, security, and innovation. Guided by ITIL principles, I thrive in collaborative environments where cross-functional teams come together to deliver exceptional results.</p>
+<div class="personal-info">
+<h3>Personal Information</h3>
+<ul class="info-list">
+<li><strong>Place of birth:</strong> Alexandria, Egypt</li>
+<li><strong>Nationality:</strong> Egyptian</li>
+<li><strong>Residency:</strong> Riyadh, Saudi Arabia</li>
+<li><strong>Marital status:</strong> Married</li>
+</ul>
+</div></div>
+
+</div>
+</section>
+<!-- Education Section -->
+<section id="education">
+<h2>Education</h2>
+<div class="education-entry">
+<h3>Sep 2007 – 2011</h3>
+<p>
+<strong>Bachelor of Industrial Education, Electronics Technology</strong><br/>
+          Focused on electronics, communications and auto‑control
+          (microcontroller projects).
+        </p>
+</div>
+<div class="education-entry">
+<h3>Sep 2002 – 2007</h3>
+<p>
+<strong>Alexandria Advanced Technical School, Electronics department</strong><br/>
+          Five‑year technical education programme concentrating on
+          electronics.
+        </p>
+</div>
+</section>
+<!-- Experience Section -->
+<section id="experience">
+<h2>Work Experience</h2>
+<div class="exp-grid"><article class="exp-card"><header class="exp-header"><i class="fa-solid fa-briefcase exp-icon"></i><div class="exp-title-wrap"><h3 class="exp-title">Technical Services Leader</h3><div class="exp-company">Saudi Edarah Group</div></div><span class="exp-date">Jan 2025 – Present</span></header><div class="exp-body"><p>Leading technical services and overseeing infrastructure
+            projects to ensure reliable service delivery and continuous
+            improvement.</p></div></article><article class="exp-card"><header class="exp-header"><i class="fa-solid fa-briefcase exp-icon"></i><div class="exp-title-wrap"><h3 class="exp-title">IT Infrastructure Engineer</h3><div class="exp-company">Sana Software (Egypt)</div></div><span class="exp-date">Nov 2020 – Dec 2024</span></header><div class="exp-body"><p>Managed on‑premises and cloud infrastructure modules including
+            high availability, load balancing and proxy services.</p></div></article><article class="exp-card"><header class="exp-header"><i class="fa-solid fa-briefcase exp-icon"></i><div class="exp-title-wrap"><h3 class="exp-title">AVL/GPS Service Director</h3><div class="exp-company">Al‑Bassami Group (KSA)</div></div><span class="exp-date">Jun 2020 – Aug 2020</span></header><div class="exp-body"><p>Directed GPS/AVL service operations and coordinated between
+            technical teams to enhance fleet management solutions.</p></div></article><article class="exp-card"><header class="exp-header"><i class="fa-solid fa-briefcase exp-icon"></i><div class="exp-title-wrap"><h3 class="exp-title">Senior System Engineer</h3><div class="exp-company">MaxMedia (STC Partner) (KSA)</div></div><span class="exp-date">2017 – Jun 2020</span></header><div class="exp-body"><p>Served as a senior system engineer supporting enterprise
+            network infrastructure and delivering reliable services for
+            clients.</p></div></article><article class="exp-card"><header class="exp-header"><i class="fa-solid fa-briefcase exp-icon"></i><div class="exp-title-wrap"><h3 class="exp-title">Senior Network/VoIP Engineer</h3><div class="exp-company">O2run Systems (KSA)</div></div><span class="exp-date">2014 – 2017</span></header><div class="exp-body"><p>Engineered and maintained network and VoIP systems for
+            enterprise customers ensuring service quality and security.</p></div></article><article class="exp-card"><header class="exp-header"><i class="fa-solid fa-briefcase exp-icon"></i><div class="exp-title-wrap"><h3 class="exp-title">Technical Support Engineer</h3><div class="exp-company">Ministry of Labour (Libya)</div></div><span class="exp-date">Jan 2012 – 2014</span></header><div class="exp-body"><p>Provided technical support and resolved network issues within
+            the ministry’s IT infrastructure.</p></div></article><article class="exp-card"><header class="exp-header"><i class="fa-solid fa-briefcase exp-icon"></i><div class="exp-title-wrap"><h3 class="exp-title">System Administrator</h3><div class="exp-company">Delta System Integrator</div></div><span class="exp-date">Jun 2009 – 2012</span></header><div class="exp-body"><p>Administered systems and networks for clients, managing server
+            infrastructure and ensuring uptime.</p></div></article></div>
+</section>
+<!-- Skills Section -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="skill-category">
+<h3><i class="fas fa-code"></i> DevOps</h3>
+<ul>
+<li>Containerization &amp; orchestration with Docker and Kubernetes</li>
+<li>CI/CD pipelines using Jenkins and GitLab CI</li>
+<li>Cloud services on AWS and Azure (EC2, S3, RDS, EKS)</li>
+<li>Monitoring and logging with Prometheus, Grafana and ELK Stack</li>
+<li>Version control using Git, GitHub and Bitbucket</li>
+<li>Infrastructure as Code: Terraform and AWS CloudFormation</li>
+<li>Security best practices and compliance audits</li>
+<li>Networking fundamentals including firewalls, load balancers and VPNs</li>
+<li>HTTP protocol, REST APIs, webhooks and SSL/TLS termination</li>
+</ul>
+</div>
+<div class="skill-category">
+<h3><i class="fas fa-server"></i> System &amp; Network</h3>
+<ul>
+<li>Full‑stack system and network administration from underlay network to
+            applications</li>
+<li>Over 10 years of experience with Windows and Linux/Unix systems</li>
+<li>Microsoft 365 Suite and Microsoft Defender XDR</li>
+<li>ITOM tools such as ManageEngine (OpManager, Site24x7), SolarWinds
+            Orion and Zabbix</li>
+<li>Storage protocols (SAN/NAS) for backup, replication and file sharing</li>
+<li>Network security: firewalls, security profiles and X.509 PKI certificates
+            (Fortinet, Sophos, PaloAlto, Mikrotik, PFsense and Opnsense)</li>
+<li>SASE models with Cloudflare, Tailscale and Zscaler platforms</li>
+<li>VPN protocols (L2/L3) and zero‑trust strategies</li>
+<li>Tunnelling and service exposure (Teleport, NetBird, Twingate and
+            Tailscale using WireGuard)</li>
+<li>Database administration: MySQL and PostgreSQL</li>
+<li>High‑availability, load balancing, proxy and reverse proxy setup</li>
+<li>Virtualization: Proxmox (KVM/QEMU), VMware vSphere and Hyper‑V</li>
+<li>Cloud computing: AWS, Azure and Google Cloud</li>
+<li>Microservices management on containers and Kubernetes</li>
+<li>Scripting and automation for infrastructure management</li>
+</ul>
+</div>
+<div class="skill-category">
+<h3><i class="fas fa-phone-volume"></i> VoIP</h3>
+<ul>
+<li>Design and support of voice network hardware and software</li>
+<li>Understanding voice metrics (delay, jitter, packet loss) and NAT
+            traversal</li>
+<li>Signalling protocols: SIP, SDP, H.323, IAX and MGCP</li>
+<li>Media protocols: RTP, SRTP, ZRTP and RTCP</li>
+<li>Traditional telephony: ISDN, PRI, BRI, FXO/FXS, POTS and PSTN</li>
+<li>SIP messages, dialogues and transactions</li>
+<li>Trunk, dial plan and endpoint management; SIP trunk integration</li>
+<li>SIP components: Kamailio, OpenSIPS; PBX &amp; media servers (Asterisk,
+            FreeSWITCH)</li>
+<li>SIP security (TLS, X.509 PKI, RSA, TLS‑ciphers) via OpenSSL/Easy‑RSA</li>
+<li>Session border controllers: Ribbon and Audiocodes</li>
+<li>Contact centre platforms: Xcally and 3CX (inbound, outbound,
+            dialer and IVR integrations)</li>
+<li>UCaaS platforms: Microsoft Teams, Zoom, Google Meet and PSTN/SIP
+            integration via SBCs</li>
+<li>Fax solutions: T.38 and fax pass‑through</li>
+<li>Vendor experience: Cisco, Avaya, Polycom, Yeastar, Grandstream
+            and Fanvil</li>
+</ul>
+</div>
+<div class="skill-category">
+<h3><i class="fas fa-network-wired"></i> Networks &amp; Platforms</h3>
+<ul>
+<li>Operating systems: Cisco IOS, Windows Server, CentOS, Debian</li>
+<li>DevOps environments: Docker Swarm, Kubernetes, OpenShift,
+            Rancher and Vagrant</li>
+<li>Virtualization &amp; cloud: VMware vSphere, Hyper‑V, Citrix Xen,
+            KVM, CloudStack and OpenStack</li>
+<li>IP telephony/VoIP: Issabel/FreePBX/Asterisk/FreeSWITCH, call centres,
+            Cisco (CME, CUCM, CUBE), Avaya (IP Office, Aura), Yeastar,
+            Grandstream</li>
+<li>VoIP protocols: SIP, H.323, IAX2, RTP and SRTP</li>
+<li>VPN protocols: IPsec, OpenVPN, WireGuard, SSL VPN, L2TP, SSTP</li>
+<li>Firewalls/VPN: Fortinet, Mikrotik, PfSense, Sophos, Pepwave,
+            Draytek</li>
+<li>Backup systems: Veeam Backup &amp; Replication, UrBackup and Duplicati</li>
+<li>Network monitoring: SNMP, WMI, Syslog, NetFlow, IP SLA, SPAN,
+            Wireshark, Nmap and Sngrep</li>
+<li>Network services: DHCP, DNS, FTP, TFTP, NTP, NAT, SSH, Telnet,
+            OSPF</li>
+<li>Network security &amp; optimisation: ACLs, port security, QoS,
+            rate‑limiting, policy routing, traffic policing, DHCP snooping</li>
+<li>Wireless LAN: 802.11g/n/ac/ax</li>
+<li>Layer 2 protocols: Ethernet, VLANs, EtherChannel</li>
+<li>Storage protocols: RAID, iSCSI, NFS, LVM, Fibre Channel, ZFS,
+            Ceph</li>
+</ul>
+</div>
+</section>
+<!-- Courses Section -->
+<section id="courses">
+<h2>Courses &amp; Self‑Study</h2>
+<div class="courses-list">
+<h3>System / Network</h3>
+<ul>
+<li>MCSE – Microsoft Certified System Engineer</li>
+<li>RHCE – Red Hat Certified Engineer</li>
+<li>CCNA – Cisco Certified Network Associate</li>
+</ul>
+<h3>VoIP</h3>
+<ul>
+<li>Xcally Certified Associate</li>
+<li>3CX Advanced Certified Engineer</li>
+<li>Quick Start OpenSIPS 3.2</li>
+</ul>
+<h3>Other Areas</h3>
+<ul>
+<li>Emerging technologies and innovation trends</li>
+<li>Networking &amp; computer hardware components</li>
+<li>Virtualization &amp; DevOps platforms</li>
+</ul>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact"><h2>Contact</h2><p>
+        I’m always happy to connect and discuss new opportunities. Feel free
+        to reach out using the details below.
+      </p><div class="contact-grid"><a aria-label="Call KSA number" class="contact-card" href="tel:+966599027671"><i class="fa-solid fa-phone contact-icon"></i><div class="contact-meta"><div class="label">Phone (KSA)</div><div class="value">+966 599027671</div></div></a><a aria-label="Call Egypt number" class="contact-card" href="tel:+201143380215"><i class="fa-solid fa-phone-volume contact-icon"></i><div class="contact-meta"><div class="label">Phone (Egypt)</div><div class="value">+20 1143380215</div></div></a><a aria-label="Send email" class="contact-card" href="mailto:amr.hgz@gmail.com"><i class="fa-solid fa-envelope contact-icon"></i><div class="contact-meta"><div class="label">Email</div><div class="value">amr.hgz@gmail.com</div></div></a><a aria-label="View LinkedIn profile" class="contact-card" href="https://www.linkedin.com/in/amrhegazy01" rel="noopener" target="_blank"><i class="fa-brands fa-linkedin contact-icon"></i><div class="contact-meta"><div class="label">LinkedIn</div><div class="value">amrhegazy01</div></div></a></div><div class="toast" id="copyToast">Copied to clipboard</div></section>
+<footer class="footer">
+<p>© 2025 Amr Hegazy. All rights reserved.</p>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const buttons = document.querySelectorAll('.copy-btn');
+  const toast = document.getElementById('copyToast');
+  async function copy(text){
+    try{
+      await navigator.clipboard.writeText(text);
+      toast.classList.add('show');
+      setTimeout(()=> toast.classList.remove('show'), 1400);
+    }catch(e){
+      alert('Copy failed. Please copy manually: ' + text);
+    }
+  }
+  buttons.forEach(b => b.addEventListener('click', () => copy(b.dataset.copy)));
+});
+</script>
+</body>
+</html>
